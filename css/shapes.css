@@ -1,0 +1,242 @@
+.icon{
+ 	font-size: 10px;
+    height: 6.45em;
+    position: relative;
+    width: 6.45em;
+}
+
+.icon .star{
+	z-index: 3;
+	left: 10.5em;
+    position: absolute;
+    top: 10em;
+    font-size: 0.3em;
+    margin-left: -9.5em;
+    margin-top: -3.2em;
+}
+.icon .magnifying-glass{
+	font-size: 5.4em;
+    left: 0.3em;
+    position: absolute;
+    top: 0.3em;
+}
+.icon .circle{
+	position: absolute;
+}
+.icon .circle.small{
+   	height: 0.18em;
+    left: 50%;
+    margin-left: -0.16em;
+    margin-top: -0.16em;
+    top: 50%;
+    width: 0.18em;
+}
+.icon .circle.tiny{
+	background: none repeat scroll 0 0 #222221;
+    border: 0 none;
+    height: 0.1em;
+    left: 50%;
+    margin-left: -0.05em;
+    margin-top: -0.05em;
+    top: 50%;
+    width: 0.1em;
+}
+
+.icon.accord .circle.small{
+ 	height: 0.14em;
+    left: 115%;
+    position: absolute;
+    right: 0;
+    top: 5%;
+    width: 0.14em;
+}
+
+.icon .tiny.left{
+	left:35%;
+	top:38%;
+}
+.icon .tiny.right{
+	top:38%;
+	left:65%;
+}
+.icon .mouth{
+	display: block;
+    height: 1em;
+    left: 50%;
+    margin-left: -1.75em;
+    overflow: hidden;
+    position: relative;
+    top: 4.3em;
+    width: 3.5em;
+}
+.icon .mouth .circle{
+	border-width: 0.05em;
+    left: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    top: -0.23em;
+}
+
+
+
+
+
+
+.icon:hover .star,
+.icon:hover .star:before,
+.icon:hover .star:after{
+	border-bottom-color: #474745;
+}
+.icon:hover .circle,
+.icon:hover .magnifying-glass{
+	border-color: #474745;
+}
+.icon:hover .circle.tiny,
+.icon:hover .magnifying-glass:before{
+	background-color: #474745;
+}
+
+
+
+.icon .circle,
+.icon .star,
+.icon .star:before,
+.icon .star:after,
+.icon .magnifying-glass,
+.icon .magnifying-glass:before,
+.icon .mouth{
+ 	transition: all 0.2s linear;
+ 	-webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+}
+
+
+
+.star {	
+	position: relative;
+	display: block;
+	color: #222221;
+	width: 0px;
+	height: 0px;
+	border-right: 10em solid transparent;
+	border-bottom: 7em solid #222221;
+	border-left: 10em solid transparent;
+	-moz-transform: rotate(35deg);
+	-webkit-transform: rotate(35deg);
+	-ms-transform: rotate(35deg);
+	-o-transform: rotate(35deg);
+}
+.star:before {
+	border-bottom: 8em solid #222221;
+	border-left: 3em solid transparent;
+	border-right: 3em solid transparent;
+	position: absolute;
+	height: 0;
+	width: 0;
+	top: -4.5em;
+	left: -6.5em;
+	display: block;
+	content: '';
+	-webkit-transform: rotate(-35deg);
+	-moz-transform: rotate(-35deg);
+	-ms-transform: rotate(-35deg);
+	-o-transform: rotate(-35deg);
+}
+.star:after {
+	position: absolute;
+	display: block;
+	color: #222221;
+	top: 0.3em;
+	left: -10.5em;
+	width: 0px;
+	height: 0px;
+	border-right: 10em solid transparent;
+	border-bottom: 7em solid #222221;
+	border-left: 10em solid transparent;
+	-webkit-transform: rotate(-70deg);
+	-moz-transform: rotate(-70deg);
+	-ms-transform: rotate(-70deg);
+	-o-transform: rotate(-70deg);
+	content: '';
+}
+
+
+.icon .circle{
+	 font-size: 12em; /* This controls the size. */
+	 display: inline-block;
+	 width: 0.4em;
+	 height: 0.4em;
+	 border: 0.07em solid #222221;
+	 
+	 border-radius: 0.35em;
+}
+.magnifying-glass
+{
+	font-size: 10em; /* This controls the size. */
+	display: inline-block;
+	width: 0.3em;
+	height: 0.3em;
+	border: 0.13em solid #222221;
+	position: relative;
+	border-radius: 0.35em;
+}
+.magnifying-glass:before
+{
+	content: "";
+	display: inline-block;
+	position: absolute;
+	right: -0.25em;
+	bottom: -0.2em;
+	border-width: 0;
+	background: #222221;
+	width: 0.35em;
+	height: 0.11em;
+	-webkit-transform: rotate(49deg);
+	-moz-transform: rotate(49deg);
+	-ms-transform: rotate(49deg);
+	-o-transform: rotate(49deg);
+}
+
+.triangle-right {
+	width: 0;
+	height: 0;
+	border-top: 5em solid transparent;
+	border-left: 10em solid red;
+	border-bottom: 5em solid transparent;
+}
+.triangle-left {
+	width: 0;
+	height: 0;
+	border-top: 5em solid transparent;
+	border-right: 10em solid red;
+	border-bottom: 5em solid transparent;
+}
+#search .triangle-right{
+	font-size:1.5px;
+	border-left-color:#222221;
+	display: inline-block;
+	position: absolute;
+	margin-top: -5em;
+    right: 10em;
+    top: 50%;
+}
+#regions .triangle-left{
+    border-right-color: #222221;
+    font-size: 2px;
+    position: absolute;
+    margin-top: -5em;
+    top: 50%;
+    left:2.5%;
+}
+.colors .icon{
+	opacity: 0.5;
+}
+.colors .icon .circle{
+	border-color:#fff;
+}
+.colors .icon .tiny,
+.colors .icon:hover .tiny{
+	background-color:#fff;
+}

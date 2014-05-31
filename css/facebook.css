@@ -1,0 +1,227 @@
+body{
+	margin:0;
+	padding:0;
+}
+
+textarea, select, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"]{
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-background-clip: padding;
+     -moz-background-clip: padding;
+          background-clip:padding-box;
+  -webkit-border-radius:0;
+     -moz-border-radius:0;
+      -ms-border-radius:0;
+       -o-border-radius:0;
+          border-radius:0;
+  -webkit-appearance:none;
+  background-color:#fff;
+  color:#000;
+  outline:0;
+  margin:0;
+  padding:0;
+  text-align: left;
+  font-size:1em;
+  height: 1em;
+  vertical-align: middle;
+}
+select, select[size="0"], select[size="1"]{
+  background:#fff url(data:image/png;base64,R0lGODlhDQAEAIAAAAAAAP8A/yH5BAEHAAEALAAAAAANAAQAAAILhA+hG5jMDpxvhgIAOw==);
+  background-repeat: no-repeat;
+  background-position: 97% center;
+  padding:0 25px 0 8px;
+  font-size: .875em
+}
+form{
+	font-size: 12px;
+}
+
+.wrapper{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	min-height: 600px;
+}
+.wrapper .container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.wrapper .background{
+	background:#140905;
+	width:100%;
+	height:100%;
+	float:left;
+	position: absolute;
+	top:0;
+	left:0;
+}
+.wrapper .center{
+
+}
+.wrapper .right{
+	background:#891F1F;
+	position: absolute;
+	right: 0;
+	width:30%;
+	height: 100%;
+}
+.right .container{
+	position: relative;
+	height: 100%;
+	width: 90%;
+	margin:0 5%;
+}
+.right .border{
+	background: #A9574C;
+	width: 1px;
+	height: 100%;
+	position: absolute;
+	left:-1px;
+	top:0;
+}
+#register{
+	position: absolute;
+	bottom:0;
+	display: block;
+	width: 100%;
+}
+#register h2{
+	text-transform: uppercase;
+}
+#register form{
+	margin-bottom: 1em;
+}
+#register .share{
+	width:36px;
+	height: 36px;
+	display: inline-block;
+	border-radius: 4px;
+	background:#3E121F;
+}
+#register .rights{
+	display: block;
+	margin:0 auto;
+	text-align: center;
+	margin:1em 0;
+	text-transform: uppercase;
+}
+#register .full{
+	overflow: hidden;
+	clear: both;
+	width: 100%;
+	position: relative;
+}
+
+#register input{
+	font-size: 1.5em;
+    height: 2.5em;
+    line-height: 2.5em;
+    padding-left:1em;
+    padding-right:6em;
+    border:0;
+    background:#323337;
+	vertical-align: bottom;
+	width: 100%;
+	color:#737373;
+}
+#register .button { 
+	background: #46474D;
+	color: #FFFFFF;
+    font-size: 1.5em;
+    height: 100%;
+    line-height: 2.5em;
+    margin-bottom: 0;
+    margin-left: -6px;
+    vertical-align: bottom;
+    display: block;
+    width:5em;
+    text-align: center;
+	position: absolute;    
+	right: 0;
+	top: 0;
+	text-decoration: none;
+}
+
+@media only screen and (min-width: 701px) {
+	.wrapper .right{
+		width: 30%;
+	}
+}
+@media only screen and (max-width: 700px) {
+	.wrapper .right{
+		bottom: 0;
+	    height: 50%;
+	    width: 100%;
+	}
+	.right .container{
+		background:	#891F1F;
+		z-index: 3;
+	}
+	.right .border{
+	/*	background: none repeat scroll 0 0 #A9574C;*/
+	    height: 1px;
+	    left: 0;
+	    position: absolute;
+	    top: -1px;
+	    width: 100%;
+	}
+	.right .border .right,
+	.right .border .left{
+		background: none repeat scroll 0 0  #891F1F;
+	    height: 40px;
+	    position: absolute;
+	    top: -27px;
+	    width: 45%;
+	    z-index: 2;
+	    
+	}
+
+	.right .border .left{
+		left:0;
+	}
+	.right .border .right{
+		right:0;
+	}
+	.right .border .left.fix{
+		box-shadow: none;
+		left: 5px;
+		clip:rect(0,100,10px,0px);
+	}
+	.right .border .left.fix{
+		box-shadow: none;
+		right: 5px;
+	}
+
+	.right .border .left.triangle,
+	.right .border .right.triangle{
+		background: none repeat scroll 0 0 #891F1F;
+	    height: 40px;
+	    width: 40px;
+	    position: absolute;
+	    top: -19px;
+	    z-index: 1;
+	}
+
+	.right .border .left.triangle{
+	    left: 45%;
+	    margin-left: -20px;
+	    transform: rotate(45deg);
+	    
+	}
+	.right .border .right.triangle{
+	    right: 45%;
+	    margin-right: -20px;
+	    transform: rotate(-45deg);
+	}
+.right .border .right,
+.right .border .left{
+	-webkit-box-shadow:  0px -5px 10px -5px #fff;
+    box-shadow:  0px -5px 10px -5px #fff;
+}
+.right .border .left.triangle,
+.right .border .right.triangle{
+	
+}
+
